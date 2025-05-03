@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Set all heading tags to Amatic SC */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', cursive;
+}
+
+/* Set all paragraph tags to Poppins with sans-serif fallback */
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+  background-color: #3e3735; /* Light gray background */
+  padding: 20px; /* Padding around the sidebar */
+  position: fixed;
+  left: -550px; /* Hide sidebar off-screen */
+  top: 0; /* Align to the top */
+  transition: left 0.3s ease; /* Smooth transition for sliding effect */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */  
+  width: 400px; /* Fixed width for sidebar */
+  z-index: 1001;
+  height: 100vh; /* Full height */
+  color: white;
+  text-align: center;
+  
+}
+
+.sidebar.open {
+  left: 0; /* Position sidebar on screen */
+  top: 0;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed; /* Fixed position to cover the entire screen */
+  height: 100vh;
+  width: 100vw; /* Full width */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
