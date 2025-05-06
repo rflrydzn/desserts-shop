@@ -1,4 +1,4 @@
-import BlackBasket from '../assets/shopping-basket-1.png';
+import BlackBasket from '../assets/shopping-basket-1.png'; //#5E5250
 import PinkBasket from '../assets/shopping-basket-2.png'; //#FE6787
 import { useState } from 'react';
 
